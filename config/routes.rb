@@ -11,9 +11,10 @@ Rails.application.routes.draw do
 
   get "/books", to: "books#index", as: "books"
   get "/books/new", to: "books#new", as: "new_book"
+  #create dropdown list in new book page of available authors
   post "/books", to: "books#create"
   get "/books/:id", to: "books#show", as: "book"
   # resources :books
 end
 
-# get "/authors/:id/book/new", to: "books#new", as: "new_book"
+# get "/authors/:id/books/new", to: "books#new", as: "new_book"
